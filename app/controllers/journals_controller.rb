@@ -1,4 +1,5 @@
 class JournalsController < ApplicationController
+    before_action :authorize
 
     def index
         journals = Journal.all

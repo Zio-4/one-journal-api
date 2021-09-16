@@ -1,4 +1,5 @@
 class UsersController < ApplicationController
+    before_action :authorize, only: :show
 
     def create
         user = User.create(user_params)
@@ -7,6 +8,11 @@ class UsersController < ApplicationController
         else
             render json: {errors: user.errors.full_messages}, status: :unprocessable_entity
         end
+    end
+
+    def show
+        user = User.find_by(id: session[:user_id])
+        render json: user
     end
 
     private
