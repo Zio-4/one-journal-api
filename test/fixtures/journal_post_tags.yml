@@ -1,9 +1,0 @@
-# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
-
-one:
-  Journal_post: one
-  Tag: one
-
-two:
-  Journal_post: two
-  Tag: two
