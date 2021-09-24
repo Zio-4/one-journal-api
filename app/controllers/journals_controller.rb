@@ -2,7 +2,7 @@ class JournalsController < ApplicationController
 
     def index
         # byebug
-        render json: Journal.all
+        render json: @current_user.journals
     end 
 
     def show
