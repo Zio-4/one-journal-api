@@ -7,6 +7,7 @@ class User < ApplicationRecord
     validate :password_requirements_are_met
     validates :name, presence: true, length: {maximum: 30}
 
+    # Custom validation to make sure passwords are super secure
     def password_requirements_are_met
         rules = {
           " must contain at least one lowercase letter"  => /[a-z]+/,
