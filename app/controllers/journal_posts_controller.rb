@@ -24,19 +24,19 @@ class JournalPostsController < ApplicationController
     end
   end
 
-  # PATCH/PUT /journal_posts/1
-  def update
-    if @journal_post.update(journal_post_params)
-      render json: @journal_post
-    else
-      render json: @journal_post.errors, status: :unprocessable_entity
-    end
-  end
+  # # PATCH/PUT /journal_posts/1
+  # def update
+  #   if @journal_post.update(journal_post_params)
+  #     render json: @journal_post
+  #   else
+  #     render json: @journal_post.errors, status: :unprocessable_entity
+  #   end
+  # end
 
-  # DELETE /journal_posts/1
-  def destroy
-    @journal_post.destroy
-  end
+  # # DELETE /journal_posts/1
+  # def destroy
+  #   @journal_post.destroy
+  # end
 
   private
     # Use callbacks to share common setup or constraints between actions.

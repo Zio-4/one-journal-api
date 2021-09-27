@@ -1,7 +1,6 @@
 class JournalsController < ApplicationController
 
     def index
-        # byebug
         render json: @current_user.journals
     end 
 
